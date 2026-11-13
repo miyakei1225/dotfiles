@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor and temporary files
+*~
+*.swp
+*.swo
+*.tmp
+
+# Credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+**/secrets/**
+**/*credentials*
+**/*token*
+**/*secret*
+**/*private*key*
+fish/fish_variables
+fish/config.fish.backup
+
+# Local tooling artifacts
+.idea/
+.vscode/
+.terraform/
+terraform.tfstate*
+
