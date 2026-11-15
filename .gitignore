@@ -21,6 +21,10 @@
 **/*private*key*
 fish/fish_variables
 fish/config.fish.backup
+# Fisher-managed plugin files are recreated from fish/fish_plugins.
+fish/completions/*
+fish/conf.d/*
+fish/functions/*
 
 # Local tooling artifacts
 .idea/

@@ -50,3 +50,9 @@ if string match -q -- "$TERM_PROGRAM" kiro; and type -q kiro
     set -l kiro_integration (kiro --locate-shell-integration-path fish 2>/dev/null)
     test -n "$kiro_integration"; and test -f "$kiro_integration"; and source "$kiro_integration"
 end
+# Inshellisense integration; keep this at the end of the file.
+set -l inshellisense_init "$HOME/.local/share/inshellisense/init/fish/init.fish"
+if set -q XDG_DATA_HOME; and test -n "$XDG_DATA_HOME"
+    set inshellisense_init "$XDG_DATA_HOME/inshellisense/init/fish/init.fish"
+end
+test -f "$inshellisense_init"; and source "$inshellisense_init"
